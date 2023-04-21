@@ -23,7 +23,6 @@
     "out": "docs",
     "name": "ts-arrayx",
     "includeVersion": true,
-    "showConfig": false,
-    "showReadme": false
+    "showConfig": false
   }
 }
