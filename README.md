@@ -1,4 +1,4 @@
-# ts-arrayx: High Performance Array Extensions for Typescript (and JS!)
+# ts-arrayx: Array Extensions for Typescript (and JS!)
 
 [![codecov](https://codecov.io/gh/neonredwood/ts-arrayx/branch/master/graph/badge.svg?token=AZY76O9W8Y)](https://codecov.io/gh/neonredwood/ts-arrayx)
 
@@ -20,18 +20,22 @@ The simplest way to start using these extensions is simply to add this import to
 
 ```typescript
 import "@neonredwood/ts-arrayx";
+
+// results is 6
+[0, 1, 2, 3].sum();
 ```
 
 This will automatically include access to all functions, by (naughty!) adding to the `Array.prototype`.
 
+You can also import functions you need individually:
+
+```typescript
+import "@neonredwood/ts-arrayx/sliding";
+
+// result is [[1, 2], [2, 3]]
+[1, 2, 3].sliding(2);
+```
+
 ## Documentation
 
-Forthcoming.
-
-## Bugs
-
-TBA
-
-## Contributing
-
-TBA
+See the documentation [here](https://neonredwood.github.io/ts-arrayx/).
