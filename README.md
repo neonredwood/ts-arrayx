@@ -1,5 +1,9 @@
 # ts-arrayx: High Performance Array Extensions for Typescript (and JS!)
 
+[![codecov](https://codecov.io/gh/neonredwood/ts-arrayx/branch/master/graph/badge.svg?token=AZY76O9W8Y)](https://codecov.io/gh/neonredwood/ts-arrayx)
+
+[![npm version](https://badge.fury.io/js/@neonredwood%2Fts-arrayx.svg)](https://badge.fury.io/js/@neonredwood%2Fts-arrayx)
+
 This module aims to add useful enhancements to the default Javascript and Typescript Array class, in order to help produce more succinct and pragmatic code.
 
 Many of the functions here are influenced by Scala's rich library for array and list manipulation.
