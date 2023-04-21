@@ -12,19 +12,20 @@
 <div class="col-content">
 <div class="tsd-page-title">
 <h2>ts-arrayx - v1.0.0</h2></div>
-<div class="tsd-panel tsd-typography"><a id="md:ts-arrayx-high-performance-array-extensions-for-typescript-and-js" class="tsd-anchor"></a><h1><a href="#$ts-arrayx-high-performance-array-extensions-for-typescript-and-js" style="color:inherit;text-decoration:none">ts-arrayx: High Performance Array Extensions for Typescript (and JS!)</a></h1><p><a href="https://codecov.io/gh/neonredwood/ts-arrayx"><img src="https://codecov.io/gh/neonredwood/ts-arrayx/branch/master/graph/badge.svg?token=AZY76O9W8Y" alt="codecov"></a></p>
+<div class="tsd-panel tsd-typography"><a id="md:ts-arrayx-array-extensions-for-typescript-and-js" class="tsd-anchor"></a><h1><a href="#$ts-arrayx-array-extensions-for-typescript-and-js" style="color:inherit;text-decoration:none">ts-arrayx: Array Extensions for Typescript (and JS!)</a></h1><p><a href="https://codecov.io/gh/neonredwood/ts-arrayx"><img src="https://codecov.io/gh/neonredwood/ts-arrayx/branch/master/graph/badge.svg?token=AZY76O9W8Y" alt="codecov"></a></p>
 <p><a href="https://badge.fury.io/js/@neonredwood%2Fts-arrayx"><img src="https://badge.fury.io/js/@neonredwood%2Fts-arrayx.svg" alt="npm version"></a></p>
 <p>This module aims to add useful enhancements to the default Javascript and Typescript Array class, in order to help produce more succinct and pragmatic code.</p>
 <p>Many of the functions here are influenced by Scala&#39;s rich library for array and list manipulation.</p>
 <a id="md:installation" class="tsd-anchor"></a><h2><a href="#$installation" style="color:inherit;text-decoration:none">Installation</a></h2><pre><code class="language-bash"><span class="hl-0">npm </span><span class="hl-1">install</span><span class="hl-0"> </span><span class="hl-1">@neonredwood/ts-arrayx</span>
 </code></pre>
 <a id="md:usage" class="tsd-anchor"></a><h2><a href="#$usage" style="color:inherit;text-decoration:none">Usage</a></h2><p>The simplest way to start using these extensions is simply to add this import to the top of a file:</p>
-<pre><code class="language-typescript"><span class="hl-2">import</span><span class="hl-0"> </span><span class="hl-1">&quot;@neonredwood/ts-arrayx&quot;</span><span class="hl-0">;</span>
+<pre><code class="language-typescript"><span class="hl-2">import</span><span class="hl-0"> </span><span class="hl-1">&quot;@neonredwood/ts-arrayx&quot;</span><span class="hl-0">;</span><br/><br/><span class="hl-3">// results is 6</span><br/><span class="hl-0">[</span><span class="hl-4">0</span><span class="hl-0">, </span><span class="hl-4">1</span><span class="hl-0">, </span><span class="hl-4">2</span><span class="hl-0">, </span><span class="hl-4">3</span><span class="hl-0">].</span><span class="hl-5">sum</span><span class="hl-0">();</span>
 </code></pre>
 <p>This will automatically include access to all functions, by (naughty!) adding to the <code>Array.prototype</code>.</p>
-<a id="md:documentation" class="tsd-anchor"></a><h2><a href="#$documentation" style="color:inherit;text-decoration:none">Documentation</a></h2><p>Forthcoming.</p>
-<a id="md:bugs" class="tsd-anchor"></a><h2><a href="#$bugs" style="color:inherit;text-decoration:none">Bugs</a></h2><p>TBA</p>
-<a id="md:contributing" class="tsd-anchor"></a><h2><a href="#$contributing" style="color:inherit;text-decoration:none">Contributing</a></h2><p>TBA</p>
+<p>You can also import functions you need individually:</p>
+<pre><code class="language-typescript"><span class="hl-2">import</span><span class="hl-0"> </span><span class="hl-1">&quot;@neonredwood/ts-arrayx/sliding&quot;</span><span class="hl-0">;</span><br/><br/><span class="hl-3">// result is [[1, 2], [2, 3]]</span><br/><span class="hl-0">[</span><span class="hl-4">1</span><span class="hl-0">, </span><span class="hl-4">2</span><span class="hl-0">, </span><span class="hl-4">3</span><span class="hl-0">].</span><span class="hl-5">sliding</span><span class="hl-0">(</span><span class="hl-4">2</span><span class="hl-0">);</span>
+</code></pre>
+<a id="md:documentation" class="tsd-anchor"></a><h2><a href="#$documentation" style="color:inherit;text-decoration:none">Documentation</a></h2><p>See the documentation <a href="https://neonredwood.github.io/ts-arrayx/">here</a>.</p>
 </div></div>
 <div class="col-sidebar">
 <div class="page-menu">
@@ -45,14 +46,12 @@
 <ul>
 <li>
 <ul>
-<li><a href="#md:ts-arrayx-high-performance-array-extensions-for-typescript-and-js"><span>ts-<wbr/>arrayx: <wbr/>High <wbr/>Performance <wbr/>Array <wbr/>Extensions for <wbr/>Typescript (and JS!)</span></a></li>
+<li><a href="#md:ts-arrayx-array-extensions-for-typescript-and-js"><span>ts-<wbr/>arrayx: <wbr/>Array <wbr/>Extensions for <wbr/>Typescript (and JS!)</span></a></li>
 <li>
 <ul>
 <li><a href="#md:installation"><span>Installation</span></a></li>
 <li><a href="#md:usage"><span>Usage</span></a></li>
-<li><a href="#md:documentation"><span>Documentation</span></a></li>
-<li><a href="#md:bugs"><span>Bugs</span></a></li>
-<li><a href="#md:contributing"><span>Contributing</span></a></li></ul></li></ul></li></ul></div></details></div>
+<li><a href="#md:documentation"><span>Documentation</span></a></li></ul></li></ul></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="index.html" class="current"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-namespace)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-4-path"></rect><path d="M9.33 16V7.24H10.77L13.446 14.74C13.43 14.54 13.41 14.296 13.386 14.008C13.37 13.712 13.354 13.404 13.338 13.084C13.33 12.756 13.326 12.448 13.326 12.16V7.24H14.37V16H12.93L10.266 8.5C10.282 8.692 10.298 8.936 10.314 9.232C10.33 9.52 10.342 9.828 10.35 10.156C10.366 10.476 10.374 10.784 10.374 11.08V16H9.33Z" fill="var(--color-text)" id="icon-4-text"></path></svg><span>ts-<wbr/>arrayx -<wbr/> v1.0.0</span></a>
 <ul class="tsd-small-nested-navigation">
