@@ -1,6 +1,6 @@
 {
   "name": "@neonredwood/ts-arrayx",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Typescript Array extensions and utilities.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
