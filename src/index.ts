@@ -1,0 +1,3 @@
+import "./first";
+
+export default {};

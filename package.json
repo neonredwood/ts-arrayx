@@ -1,0 +1,46 @@
+{
+  "name": "@neonredwood/ts-arrayx",
+  "version": "0.0.1",
+  "description": "Typescript Array extensions and utilities.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.(js|ts)\"",
+    "lint": "eslint src --ext .js,.ts",
+    "lint:fix": "eslint src --fix --ext .js,.ts",
+    "test": "jest --config jest.config.js",
+    "prepare": "yarn run build",
+    "prepublishOnly": "yarn test && yarn run lint",
+    "preversion": "yarn run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neonredwood/ts-arrayx.git"
+  },
+  "keywords": [
+    "array",
+    "extensions"
+  ],
+  "author": "Neon Redwood",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neonredwood/ts-arrayx/issues"
+  },
+  "homepage": "https://github.com/neonredwood/ts-arrayx#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "5.59.0",
+    "@typescript-eslint/parser": "5.59.0",
+    "eslint": "8.38.0",
+    "eslint-plugin-jest": "27.2.1",
+    "jest": "^29.5.0",
+    "prettier": "2.8.7",
+    "ts-jest": "^29.1.0",
+    "typescript": "5.0.4"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}
