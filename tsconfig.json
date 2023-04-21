@@ -9,12 +9,21 @@
     "skipLibCheck": true,
     "incremental": true,
     "outDir": "./dist",
-    "types":["node", "jest"]
+    "types": ["node", "jest"]
   },
-  "include": [
-    "src/**/*.ts",
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/index.ts"],
+  "exclude": ["node_modules"],
+  "typedocOptions": {
+    "entryPoints": "./src/",
+    "entryPointStrategy": "expand",
+    "excludePrivate": true,
+    "excludeProtected": true,
+    "excludeInternal": true,
+    "exclude": ["**/*+(e2e|spec|index).ts", "**/index.ts"],
+    "out": "docs",
+    "name": "ts-arrayx",
+    "includeVersion": true,
+    "showConfig": false,
+    "showReadme": false
+  }
 }
