@@ -1,3 +1,26 @@
+import "./avg";
+import "./chunk";
+import "./distinct";
+import "./distinctBy";
+import "./drop";
+import "./dropRight";
+import "./dropRightWhile";
+import "./dropWhile";
 import "./first";
+import "./flatten";
+import "./groupBy";
+import "./grouped";
+import "./last";
+import "./max";
+import "./maxBy";
+import "./min";
+import "./minBy";
+import "./sliding";
+import "./sortBy";
+import "./sum";
+import "./take";
+import "./takeRight";
+import "./takeRightWhile";
+import "./takeWhile";
 
 export default {};

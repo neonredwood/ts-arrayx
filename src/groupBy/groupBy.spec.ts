@@ -3,14 +3,14 @@ import "./groupBy";
 describe("Array.groupBy", () => {
   it("groups by empty array", () => {
     const original: { name: string; value: number }[] = [];
-    const out = original.groupBy((x) => x.name);
+    const out = original.groupBy(x => x.name);
 
     expect(out.size).toEqual(0);
   });
 
   it("groups by string key", () => {
     const original = [5, 5, 1];
-    const out = original.groupBy((x) => "k" + x);
+    const out = original.groupBy(x => "k" + x);
 
     expect(out.size).toEqual(2);
     expect(out.get("k1")).toEqual([1]);
@@ -19,7 +19,7 @@ describe("Array.groupBy", () => {
 
   it("groups by number key", () => {
     const original = [5, 5, 1];
-    const out = original.groupBy((x) => 2 * x);
+    const out = original.groupBy(x => 2 * x);
 
     expect(out.size).toEqual(2);
     expect(out.get(2)).toEqual([1]);
@@ -32,7 +32,7 @@ describe("Array.groupBy", () => {
       { name: "groupB", value: 1200 },
       { name: "groupA", value: -1 },
     ];
-    const out = original.groupBy((x) => x.name);
+    const out = original.groupBy(x => x.name);
 
     expect(out.size).toEqual(2);
     expect(out.get("groupA")).toEqual([

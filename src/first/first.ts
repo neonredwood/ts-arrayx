@@ -1,5 +1,8 @@
 declare global {
   interface Array<T> {
+    /**
+     * Returns the first element in the array.
+     */
     first(): T;
   }
 }
