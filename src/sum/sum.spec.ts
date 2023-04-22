@@ -4,7 +4,7 @@ describe("Array.sum should", () => {
   it("handles empty arrays", () => {
     const input: number[] = [];
     const output = input.sum();
-    expect(output).toBeUndefined();
+    expect(output).toBe(0);
   });
 
   it("sums an array", () => {
